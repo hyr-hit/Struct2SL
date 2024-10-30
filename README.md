@@ -1,6 +1,6 @@
 # Struct2SL: Synthetic lethality prediction based on AlphaFold2 structure information and Graph Convolutional Network
 # Abstract
-Struct2GO is a protein function prediction model based on self-attention graph pooling, which utilizes structural information from AlphaFold2 to augment the accuracy and generality of the model's predictions.
+Struct2SL is a synthetic lethal gene pair prediction model based on graph convolutional neural networks, which uses protein information from AlphaFold2 and other sources to enhance the accuracy and versatility of model predictions.
 
 
 ![avatar](/model.png)
