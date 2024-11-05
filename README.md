@@ -65,7 +65,7 @@ python seq2vec.py
 ```
 
 ### Mapping of proteins and genes is achieved to obtain gene feature embedding
-- The processing method of sequence features is the same as PPI. Here we provide the processing method of structural features.
+- The processing method of sequence features is the same as PPI, which is to replace the key value according to the correspondence between the protein and gene in uniprot. Here we provide the processing method of structural features.
 ```
 cd ./protein2gene
 python protein2gene.py
