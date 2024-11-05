@@ -397,7 +397,7 @@ if __name__ == "__main__":
         if test_spe_loss < best_test_spe_loss:
             torch.save(best_model, results_modelname)
 
-    print("结果:")
+    print("Results:")
     print("Test Accuracy: {:.5f} +/- {:.5f}".format(np.mean(test_accuracy_scores), np.std(test_accuracy_scores)))
     print("AUC: {:.5f} +/- {:.5f}".format(np.mean(auc_scores), np.std(auc_scores)))
     print("AUPR: {:.5f} +/- {:.5f}".format(np.mean(aupr_scores), np.std(aupr_scores)))
