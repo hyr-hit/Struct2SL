@@ -224,11 +224,11 @@ def custom_loss(loss1, loss2, loss3, alpha):
     return total_loss
 
 if __name__ == "__main__":
-    structure_folder = "/home/yuanrz/old/pdb_path/process_data_liyaxuan/final_data/struct_features"
-    sequence_file = "/home/yuanrz/old/pdb_path/process_data_liyaxuan/final_data/sequence_features.npz"
-    ppi_file = "/home/yuanrz/old/pdb_path/process_data_liyaxuan/final_data/ppi_features.npz"
-    sl_pairs_file = "/home/yuanrz/old/pdb_path/process_data_liyaxuan/final_data/Human_SL.csv"
-    sl_non_pairs_file = "/home/yuanrz/old/pdb_path/process_data_liyaxuan/final_data/Human_nonSL.csv"
+    structure_folder = "./final_data/struct_features"
+    sequence_file = "./final_data/sequence_features.npz"
+    ppi_file = "./final_data/ppi_features.npz"
+    sl_pairs_file = "./final_data/Human_SL.csv"
+    sl_non_pairs_file = "./final_data/Human_nonSL.csv"
 
     structure_features, sequence_features, ppi_features, sl_pairs, sl_non_pairs = load_data(structure_folder, sequence_file, ppi_file, sl_pairs_file, sl_non_pairs_file)
     features, labels = preprocess_data(structure_features, sequence_features, ppi_features, sl_pairs, sl_non_pairs)
@@ -393,7 +393,7 @@ if __name__ == "__main__":
         precision_scores.append(precision)
         recall_scores.append(recall)
 
-        results_folder = "/home/yuanrz/old/pdb_path/process_data_liyaxuan/thresholds_results/"
+        results_folder = "./final_results/"
         if not os.path.exists(results_folder):
             os.makedirs(results_folder)
         results_modelname = os.path.join(results_folder, f"bestmodel.pt")
