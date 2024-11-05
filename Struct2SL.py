@@ -105,14 +105,12 @@ def load_data(structure_folder, sequence_file, ppi_file, sl_pairs_file, sl_non_p
 
     return structure_features, sequence_features, ppi_features, sl_pairs, sl_non_pairs
 
-# 数据预处理
 def preprocess_data(structure_features, sequence_features, ppi_features, sl_pairs, sl_non_pairs, num_negative_samples=1):
     features = []
     labels = []
     pos_num = 0
     neg_num = 0
 
-    # 添加正样本
     for pair in sl_pairs:
         gene1 = pair[0]
         gene2 = pair[1]
@@ -127,7 +125,6 @@ def preprocess_data(structure_features, sequence_features, ppi_features, sl_pair
             pos_num += 1
     print("Positive samples added!")
 
-    # 添加正样本
     for pair in sl_non_pairs:
         gene1 = pair[0]
         gene2 = pair[1]
