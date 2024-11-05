@@ -33,29 +33,21 @@ Run the ``Struct2SL.py`` script directly to train the model
  python Struct2SL.py
  ``` 
 
-## Evaluation the model
-Run the ``run_test.sh`` scirpy directly to evaluation the model(e.g. for MFO)
-``` python
-python run_test.sh
-```
-
-Note: Remember to update the file directory in the script to your local directory if you wish to evaluation the MFO model or the other two models.
-
 ## Processing raw data
 we provide the proccesed data for training and evaluating directly [there](https://pan.baidu.com/s/1qVr5RuUbg2cDByJMnEVVrw?pwd=uf3s), and then we will explain how to process the raw data.
 ### Protein struction data
 - Download protein structure data and convert the three-dimensional atomic structure of proteins into protein contact maps.
 ```
-cd ./data_processing
+cd ./struct/node2vec-master
 python predicted_protein_struct2map.py
 ```
-- Obtain amino acid residue-level features through the Node2vec algorithm.
+- Extracting structural features.
 ```
-cd ./angel-master/spark-on-angel/example/local/Node2VecExample.scala
+python src/main.py --input ../../data/proteins_edgs --output ../../data/after_node_vec
 ```
-(ps:run it by the IntelLLiJ IDEA )
+- Get the structural feature matrix
 ```
-cd .data_processing
+cd..
 python sort.py
 ```
 
