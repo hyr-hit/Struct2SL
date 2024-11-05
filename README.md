@@ -13,18 +13,6 @@ Struct2SL is a synthetic lethal gene pair prediction model based on graph convol
   
 We put the processed data for train and test on [there](https://github.com/lyjps/Struct2GO/tree/master/divided_data)\
 We put the Source Data [there](https://github.com/lyjps/Struct2GO/tree/Source_data/Source_data) \
-predicted_struct_protein_data.tar.gz、protein_contact_map.tar.gz、struct_feature.tar.gz supplement [there](https://pan.baidu.com/s/15lyLZ2gMwzop50aUennTPQ?pwd=bcqc)\
-include:
-| File/Folder name                | Description                                              |
-| ------------------------------- | -------------------------------------------------------- |
-| predicted_struct_protein_data   | Alphafold2 predicted human protein 3D structure datasets.|
-| protein_contact_map             | Computed CA-CA protein contact map.                      |
-| struct_feature                  | Protein structural features.                             |
-| dict_sequence_feature           | Protein sequence features.                               |
-| gos_bp.csv                      | GO terms corresponding to all human proteins in the BP branch. |
-| gos_mf.csv                      | GO terms corresponding to all human proteins in the MF branch. |
-| gos_cc.csv                      | GO terms corresponding to all human proteins in the CC branch. |
-
 
 # Usage
 ## Train the model
@@ -51,17 +39,34 @@ cd..
 python sort.py
 ```
 
+### Protein PPI data
+- The original data is 9606.protein.physical.links.v12.0.txt in ./PPI/data
+```
+cd ./PPI
+python pre_pre.py
+```
+- The output files are id_list.txt & pre_node2vec_physical.txt
+The protein names are stored in id_list.txt in the order of appearance, and their graph information (indicated by serial numbers) is stored in pre_node2vec_physical.txt
+```
+python ./node2vec-master/src/main.py --input pre_node2vec_physical.txt --output result.emb.txt
+python sort.py
+```
+- Get the sorted files
+- Rename the protein and match its characteristics to obtain the final protein PPI feature ppi_emb for later use
+```
+python data_pre.py
+```
+
 ### Protein sequence data
 - Download protein sequence data obtain protein sequence features through the Seqvec model.
 ```
-cd ./data_processing
+cd ./sequence
 python seq2vec.py
 ```
 
-### Fuse protein structure and sequence data and divide the dataset
+### Mapping of proteins and genes is achieved to obtain gene feature embedding
+- The processing method of sequence features is the same as PPI. Here we provide the processing method of structural features.
 ```
-cd ./model
-python labels_load.p
-cd ./data_processing
-python divide_data.py
+cd ./protein2gene
+python protein2gene.py
 ```
