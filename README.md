@@ -52,7 +52,7 @@ python ./node2vec-master/src/main.py --input pre_node2vec_physical.txt --output 
 python sort.py
 ```
 - Get the sorted files
-Rename the protein and match its characteristics to obtain the final protein PPI feature ppi_emb for later use
+- Rename the protein and match its characteristics to obtain the final protein PPI feature ppi_emb for later use
 ```
 python data_pre.py
 ```
