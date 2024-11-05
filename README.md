@@ -28,9 +28,9 @@ include:
 
 # Usage
 ## Train the model
-Run the ``run_train.sh`` script directly to train the model(e.g. for MFO)
+Run the ``Struct2SL.py`` script directly to train the model
  ```python
- python run_train.sh
+ python Struct2SL.py
  ``` 
 
 Note: Remember to update the file directory in the script to your local directory if you wish to run the MFO model or the other two models.
