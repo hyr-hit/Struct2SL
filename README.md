@@ -33,8 +33,6 @@ Run the ``Struct2SL.py`` script directly to train the model
  python Struct2SL.py
  ``` 
 
-Note: Remember to update the file directory in the script to your local directory if you wish to run the MFO model or the other two models.
-
 ## Evaluation the model
 Run the ``run_test.sh`` scirpy directly to evaluation the model(e.g. for MFO)
 ``` python
