@@ -3,7 +3,7 @@
 Struct2SL is a synthetic lethal gene pair prediction model based on graph convolutional neural networks, which uses protein information from AlphaFold2 and other sources to enhance the accuracy and versatility of model predictions.
 
 
-![avatar](/model.png)
+![image](https://github.com/hyr-hit/Struct2SL/blob/main/image/frame.jpg)
 
 # Data
 - Protein structure: download from https://alphafold.ebi.ac.uk/
