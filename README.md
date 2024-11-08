@@ -11,8 +11,8 @@ Struct2SL is a synthetic lethal gene pair prediction model based on graph convol
 - PPI network: down from https://string-db.org/
 - SL/nonSL: download from https://synlethdb.sist.shanghaitech.edu.cn/home
   
-We put the processed data for train and test on [there](https://github.com/lyjps/Struct2GO/tree/master/divided_data)\
-We put the Source Data [there](https://github.com/lyjps/Struct2GO/tree/Source_data/Source_data) \
+We put the processed data for train and test on [there](https://github.com/hyr-hit/Struct2SL/tree/main/final_data)\
+
 
 # Usage
 ## Train the model
@@ -59,8 +59,8 @@ python data_pre.py
 
 ### Protein sequence data
 - Download the ELMo pre-trained model to /sequence/model\
--- weigthts: download from [there](https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x4096_512_2048cnn_2xhighway/elmo_2x4096_512_2048cnn_2xhighway_weights.hdf5)\
--- options: download from [there](https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x4096_512_2048cnn_2xhighway/elmo_2x4096_512_2048cnn_2xhighway_options.json)\
+- weigthts: download from [there](https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x4096_512_2048cnn_2xhighway/elmo_2x4096_512_2048cnn_2xhighway_weights.hdf5)\
+- options: download from [there](https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x4096_512_2048cnn_2xhighway/elmo_2x4096_512_2048cnn_2xhighway_options.json)\
 
 - Download protein sequence data obtain protein sequence features through the Seqvec model.
 ```
