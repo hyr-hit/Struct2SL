@@ -59,7 +59,7 @@ python data_pre.py
 
 ### Protein sequence data
 - Download the ELMo pre-trained model to /sequence/model
-- weigthts: download from [there](https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x4096_512_2048cnn_2xhighway/elmo_2x4096_512_2048cnn_2xhighway_weights.hdf5)\
+- weigthts: download from [there](https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x4096_512_2048cnn_2xhighway/elmo_2x4096_512_2048cnn_2xhighway_weights.hdf5)
 - options: download from [there](https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x4096_512_2048cnn_2xhighway/elmo_2x4096_512_2048cnn_2xhighway_options.json)
 
 - Download protein sequence data obtain protein sequence features through the Seqvec model.
