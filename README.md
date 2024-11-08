@@ -11,7 +11,7 @@ Struct2SL is a synthetic lethal gene pair prediction model based on graph convol
 - PPI network: down from https://string-db.org/
 - SL/nonSL: download from https://synlethdb.sist.shanghaitech.edu.cn/home
   
-We put the processed data for train and test on [there](https://github.com/hyr-hit/Struct2SL/tree/main/final_data)\
+We put the processed data for train and test on [there](https://github.com/hyr-hit/Struct2SL/tree/main/final_data)
 
 
 # Usage
