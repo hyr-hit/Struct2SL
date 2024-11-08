@@ -19,7 +19,7 @@ import os
 import shutil
 
 source_folder = "./struct/proteins_edgs"
-target_folder = "../final_data/struct_features"
+target_folder = "./final_data/struct_features"
 
 if not os.path.exists(target_folder):
     os.makedirs(target_folder)
