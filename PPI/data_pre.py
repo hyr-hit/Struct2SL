@@ -29,13 +29,13 @@ df1 = df1.dropna(axis=0,subset = ['STRING'])
 
 df1['STRING'] = df1['STRING'].str.rstrip(';')
 
-dff = df1[['Entry', 'STRING']] # 取出其中两列
+dff = df1[['Entry', 'STRING']] 
 
-dff.set_index(keys='STRING', inplace=True) # 设置作为key的列为index
+dff.set_index(keys='STRING', inplace=True) 
 
-dff = dff.T #取它的转置
+dff = dff.T 
 
-dic = dff.to_dict(orient='records')[0] #转化成字典，这可能会有多行，导出是一个字典类型的数组，我们取第一项就可以了
+dic = dff.to_dict(orient='records')[0] 
 
 print(dic)
 
