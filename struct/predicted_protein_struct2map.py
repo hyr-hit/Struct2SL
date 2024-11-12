@@ -11,7 +11,7 @@ def _load_cmap(filename, cmap_thresh=10.0):
             A = np.double(D < cmap_thresh)
             print(A)
         S = seq2onehot(seq)
-        S = S.reshape(1, *S.shape)                  # 升维？
+        S = S.reshape(1, *S.shape)                 
         A = A.reshape(1, *A.shape)
 
         return A, S, seq
@@ -23,7 +23,7 @@ def load_predicted_PDB(pdbfile):
     structure = parser.get_structure(pdbfile.split('/')[-1].split('.')[0], pdbfile)
     #name = structure.header['name']
     #print(name)
-    residues = [r for r in structure.get_residues()]       # 获取残基
+    residues = [r for r in structure.get_residues()]       
 
     # sequence from atom lines
     records = SeqIO.parse(pdbfile, 'pdb-atom')
@@ -32,9 +32,9 @@ def load_predicted_PDB(pdbfile):
     distances = np.empty((len(residues), len(residues)))
     for x in range(len(residues)):
         for y in range(len(residues)):
-            one = residues[x]["CA"].get_coord()           # 获取原子坐标
+            one = residues[x]["CA"].get_coord()           
             two = residues[y]["CA"].get_coord()
-            distances[x, y] = np.linalg.norm(one-two)     # 求矩阵二范数
+            distances[x, y] = np.linalg.norm(one-two)     
 
     return distances, seqs[0]
 
@@ -76,7 +76,6 @@ for path,dir_list,file_list in os.walk("D:/cancer_project/code/struct2map_data")
         filename = file_name.split("-")
         name = filename[1]
         data = pd.DataFrame(result)
-        #index参数设置为False表示不保存行索引,header设置为False表示不保存列索引
         data.to_csv("D:/cancer_project/code/proteins_edgs/" + name + ".txt",sep=" ",index=False,header=False)
         #B_ = matrix2table(B)
         #print(len(A))
