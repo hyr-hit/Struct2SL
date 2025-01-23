@@ -7,7 +7,7 @@ Struct2SL is a synthetic lethal gene pair prediction model based on multilayer p
 
 
 # Installation
-SLGNN is based on Pytorch and Python
+Struct2SL is based on Pytorch and Python
 ## Train the model
 You will need the following packages to run the code:
 - python==3.9.19
