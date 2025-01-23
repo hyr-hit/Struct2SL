@@ -76,7 +76,7 @@ for path,dir_list,file_list in os.walk("D:/cancer_project/code/struct2map_data")
         filename = file_name.split("-")
         name = filename[1]
         data = pd.DataFrame(result)
-        data.to_csv("D:/cancer_project/code/proteins_edgs/" + name + ".txt",sep=" ",index=False,header=False)
+        data.to_csv("./data/proteins_edgs/" + name + ".txt",sep=" ",index=False,header=False)
         #B_ = matrix2table(B)
         #print(len(A))
         #A_ = matrix2table()
