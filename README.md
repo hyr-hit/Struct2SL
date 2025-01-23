@@ -57,7 +57,7 @@ cd..
 ```
 
 ### Protein PPI data
-- The original data needs to be downloaded from the database mentioned above, or obtained from [here](https://figshare.com/articles/dataset/PPI_raw_data/28264199?file=51876317)
+- The original data needs to be downloaded from the database mentioned above, or obtained from [here](https://figshare.com/articles/dataset/PPI_raw_data/28264199?file=51876317).
 ```
 cd ./PPI
 python pre_pre.py
