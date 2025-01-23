@@ -5,13 +5,28 @@ Struct2SL is a synthetic lethal gene pair prediction model based on multilayer p
 
 ![image](https://github.com/hyr-hit/Struct2SL/blob/main/image/FRAME.jpg)
 
+
+# Installation
+SLGNN is based on Pytorch and Python
+## Train the model
+You will need the following packages to run the code:
+- python==3.9.19
+- torch==2.3.1
+- numpy==1.26.4
+- pandas==1.3.5
+- scikit-learn==1.4.2
+- imbalanced-learn==0.12.3
+- torchvision==0.19.1
+- scipy==1.10.1
+
+
 # Data
 - Protein structure: download from https://alphafold.ebi.ac.uk/
 - Protein sequence: download from https://www.uniprot.org/
 - PPI network: down from https://string-db.org/
 - SL/nonSL: download from https://synlethdb.sist.shanghaitech.edu.cn/v2/#/download
   
-We put the processed data for train and test and raw data on [there](https://figshare.com/account/home#/projects/235232)
+We put the processed data for train and test and raw data on [there](https://figshare.com/search?q=Struct2SL)
 
 
 # Usage
@@ -22,7 +37,7 @@ Run the ``Struct2SL.py`` script directly to train the model
  ``` 
 
 ## Processing raw data
-we provide the proccesed data for training and evaluating directly [there](https://figshare.com/account/home#/projects/235232), and then we will explain how to process the raw data.
+we provide the proccesed data for training and evaluating directly [there](https://figshare.com/search?q=Struct2SL), and then we will explain how to process the raw data.
 ### Protein struction data
 - Download protein structure data and convert the three-dimensional atomic structure of proteins into protein contact maps.
 ```
