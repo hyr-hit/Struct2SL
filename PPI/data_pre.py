@@ -14,7 +14,7 @@ for line in data:
 
 # print(id_number)
 
-f = open('./result_for_sort/result.emb.txt')
+f = open('result.emb.txt')
 data = f.readlines()
 f.close()
 for line in data:
