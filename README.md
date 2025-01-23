@@ -11,7 +11,7 @@ Struct2SL is a synthetic lethal gene pair prediction model based on multilayer p
 - PPI network: down from https://string-db.org/
 - SL/nonSL: download from https://synlethdb.sist.shanghaitech.edu.cn/v2/#/download
   
-We put the processed data for train and test on [there](https://github.com/hyr-hit/Struct2SL/tree/main/final_data)
+We put the processed data for train and test and raw data on [there](https://figshare.com/account/home#/projects/235232)
 
 
 # Usage
@@ -22,7 +22,7 @@ Run the ``Struct2SL.py`` script directly to train the model
  ``` 
 
 ## Processing raw data
-we provide the proccesed data for training and evaluating directly [there](https://pan.baidu.com/s/1qVr5RuUbg2cDByJMnEVVrw?pwd=uf3s), and then we will explain how to process the raw data.
+we provide the proccesed data for training and evaluating directly [there](https://figshare.com/account/home#/projects/235232), and then we will explain how to process the raw data.
 ### Protein struction data
 - Download protein structure data and convert the three-dimensional atomic structure of proteins into protein contact maps.
 ```
@@ -55,7 +55,9 @@ python ./node2vec-master/src/main.py --input ./PPI/pre_node2vec_physical.txt --o
 ```
 - Rename the protein and match its characteristics to obtain the final protein PPI feature ppi_emb for later use
 ```
+cd ./PPI
 python data_pre.py
+cd..
 ```
 
 ### Protein sequence data
