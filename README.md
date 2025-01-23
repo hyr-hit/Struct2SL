@@ -48,7 +48,8 @@ python pre_pre.py
 - The output files are id_list.txt & pre_node2vec_physical.txt
 The protein names are stored in id_list.txt in the order of appearance, and their graph information (indicated by serial numbers) is stored in pre_node2vec_physical.txt
 ```
-python ./node2vec-master/src/main.py --input pre_node2vec_physical.txt --output result.emb.txt
+cd..
+python ./node2vec-master/src/main.py --input ./PPI/pre_node2vec_physical.txt --output ./PPI/result.emb.txt
 python sort.py
 ```
 - Get the sorted files
