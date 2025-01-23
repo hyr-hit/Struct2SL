@@ -26,7 +26,7 @@ You will need the following packages to run the code:
 - PPI network: down from https://string-db.org/
 - SL/nonSL: download from https://synlethdb.sist.shanghaitech.edu.cn/v2/#/download
   
-We put the processed data for train and test and on [there](https://figshare.com/projects/Struct2SL/235232)
+We put the processed data for train and test and on [there](https://figshare.com/projects/Struct2SL/235232).Please download the data and put it into the 'data' folder.
 
 
 # Usage
