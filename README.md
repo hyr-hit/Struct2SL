@@ -26,12 +26,13 @@ we provide the proccesed data for training and evaluating directly [there](https
 ### Protein struction data
 - Download protein structure data and convert the three-dimensional atomic structure of proteins into protein contact maps.
 ```
-cd ./struct/node2vec-master
+cd ./struct
 python predicted_protein_struct2map.py
 ```
 - Extracting structural features.
 ```
-python src/main.py --input ../../data/proteins_edgs --output ../../data/after_node_vec
+cd..
+python ./node2vec-master/src/main.py --input ../../data/proteins_edgs --output ../../data/after_node_vec
 ```
 - Get the structural feature matrix
 ```
@@ -50,9 +51,7 @@ The protein names are stored in id_list.txt in the order of appearance, and thei
 ```
 cd..
 python ./node2vec-master/src/main.py --input ./PPI/pre_node2vec_physical.txt --output ./PPI/result.emb.txt
-python sort.py
 ```
-- Get the sorted files
 - Rename the protein and match its characteristics to obtain the final protein PPI feature ppi_emb for later use
 ```
 python data_pre.py
