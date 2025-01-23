@@ -26,7 +26,7 @@ You will need the following packages to run the code:
 - PPI network: down from https://string-db.org/
 - SL/nonSL: download from https://synlethdb.sist.shanghaitech.edu.cn/v2/#/download
   
-We put the processed data for train and test and on [there](https://figshare.com/projects/Struct2SL/235232). 
+We put the processed data for train and test and on [there](https://figshare.com/articles/dataset/the_processed_data/28263827). 
 
 
 # Usage
@@ -37,7 +37,7 @@ Download the processed data mentioned above and put it into the 'data' folder. R
  ``` 
 
 ## Processing raw data
-we provide the proccesed data for training and evaluating directly [there](https://figshare.com/projects/Struct2SL/235232), and then we will explain how to process the raw data.
+we provide the proccesed data for training and evaluating directly [there](https://figshare.com/articles/dataset/the_processed_data/28263827), and then we will explain how to process the raw data.
 ### Protein struction data
 - Download protein structure data and convert the three-dimensional atomic structure of proteins into protein contact maps.
 ```
