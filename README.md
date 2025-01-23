@@ -1,6 +1,6 @@
-# Struct2SL: Synthetic lethality prediction based on AlphaFold2 structure information and Graph Convolutional Network
+# Struct2SL: Synthetic lethality prediction based on AlphaFold2 structure information and Multilayer Perceptron
 # Abstract
-Struct2SL is a synthetic lethal gene pair prediction model based on graph convolutional neural networks, which uses protein information from AlphaFold2 and other sources to enhance the accuracy and versatility of model predictions.
+Struct2SL is a synthetic lethal gene pair prediction model based on multilayer perceptron, which uses protein information from AlphaFold2 and other sources to enhance the accuracy and versatility of model predictions.
 
 
 ![image](https://github.com/hyr-hit/Struct2SL/blob/main/image/FRAME.jpg)
@@ -32,12 +32,13 @@ python predicted_protein_struct2map.py
 - Extracting structural features.
 ```
 cd..
-python ./node2vec-master/src/main.py --input ../../data/proteins_edgs --output ../../data/after_node_vec
+python ./node2vec-master/src/main.py --input ./struct/data/proteins_edgs --output ./struct/data/after_node_vec
 ```
 - Get the structural feature matrix
 ```
-cd..
+cd ./struct
 python sort.py
+cd..
 ```
 
 ### Protein PPI data
