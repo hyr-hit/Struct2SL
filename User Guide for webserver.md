@@ -39,7 +39,7 @@ After submitting a query, the results will be displayed in the "Results" section
 - **Gene A**: The name of the first gene.
 - **Gene B**: The name of the second gene.
 - **Prediction Score**: The confidence score of the predicted synthetic lethality interaction.
-- **Predicting Relation**: The type of relationship (e.g., "old_SL" for known interactions or "new_SL" for newly predicted interactions).
+- **Predicting Relation**: The type of relationship (SL or nonSL).
 - **Source**: Indicates whether the result is from SynlethDB or Struct2SL.
 
 ### 4.4 Pagination and Filtering
@@ -50,8 +50,8 @@ After submitting a query, the results will be displayed in the "Results" section
 ### Scenario: Identifying Synthetic Lethality Pairs for a Specific Gene
 1. Navigate to the Struct2SL homepage.
 2. Click on the "Search" link in the navigation menu.
-3. In the search form, enter the name of Gene A (e.g., "BRCA1").
-4. Leave the Gene B field empty to retrieve all potential synthetic lethality pairs for BRCA1.
+3. In the search form, enter the name of Gene A (e.g., "TSPAN1").
+4. Leave the Gene B field empty to retrieve a subset of potential synthetic lethal pairs for TSPAN1.
 5. Select the desired filter option (e.g., "ALL" to view results from both SynlethDB and Struct2SL).
 6. Click the "Submit" button.
 7. The results will be displayed in the "Results" section. Review the table to identify potential synthetic lethality pairs and their prediction scores.
