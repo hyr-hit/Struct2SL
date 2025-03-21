@@ -55,6 +55,20 @@ After submitting a query, the results will be displayed in the "Results" section
 5. Select the desired filter option (e.g., "ALL" to view results from both SynlethDB and Struct2SL).
 6. Click the "Submit" button.
 7. The results will be displayed in the "Results" section. Review the table to identify potential synthetic lethality pairs and their prediction scores.
+### Scenario: Querying a Specific Synthetic Lethality Pair
+1. Navigate to the Struct2SL homepage.
+2. Click on the "Search" link in the navigation menu.
+3. In the search form, enter the name of Gene A (e.g., "TSPAN1").
+4. Enter the name of Gene B (e.g., "PRRG4") to retrieve the specific synthetic lethality pair prediction for TSPAN1 and PRRG4.
+5. Select the desired filter option (e.g., "ALL" to view results from both SynlethDB and Struct2SL).
+6. Click the "Submit" button.
+7. The results will be displayed in the "Results" section. If the specific pair is found, you will see a single row in the table with the following information:
+   - &#x2022; **Gene A**: TSPAN1
+   - &#x2022; **Gene B**: PRRG4
+   - &#x2022; **Prediction Score**: The confidence score of the predicted synthetic lethality interaction between TSPAN1 and PRRG4.
+   - &#x2022; **Predicting Relation**: The type of relationship (e.g., SL or nonSL).
+   - &#x2022; **Source**: Indicates whether the result is from SynlethDB or Struct2SL.
+8. If no results are found for the specific pair, a message will indicate that no data is available for the given gene pair.
 
 ## 6. Additional Features
 ### 6.1 About Us
