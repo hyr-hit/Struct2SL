@@ -9,7 +9,8 @@ To use Struct2SL, you need:
 - An active internet connection to access the webserver.
 
 ## 3. Accessing Struct2SL
-Struct2SL is accessible via a web interface. To start using the tool, navigate to the following URL:[Struct2SL - Synthetic Lethality Prediction](http://120.76.218.216)
+Struct2SL is accessible via a web interface. To start using the tool, navigate to the following URL:
+[http://120.76.218.216](http://120.76.218.216)
 Upon accessing the URL, you will be directed to the Struct2SL homepage.
 
 ## 4. Navigating the Web Interface
