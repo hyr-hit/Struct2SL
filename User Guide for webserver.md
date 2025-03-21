@@ -9,10 +9,7 @@ To use Struct2SL, you need:
 - An active internet connection to access the webserver.
 
 ## 3. Accessing Struct2SL
-Struct2SL is accessible via a web interface. To start using the tool, navigate to the following URL:
-```
-http://120.76.218.216:5000
-```
+Struct2SL is accessible via a web interface. To start using the tool, navigate to the following URL:[Struct2SL - Synthetic Lethality Prediction](http://120.76.218.216)
 Upon accessing the URL, you will be directed to the Struct2SL homepage.
 
 ## 4. Navigating the Web Interface
@@ -79,6 +76,3 @@ For further assistance or inquiries, please contact the development team at:
 ## 9. Conclusion
 Struct2SL is a powerful tool for predicting synthetic lethality pairs in human genes. By following this user guide, researchers and clinicians can effectively utilize the webserver to explore potential gene interactions and gain insights for their studies. We encourage users to provide feedback to help us improve the tool and its functionality.
 
----
-
-**Note**: This user guide is based on the provided files and assumes that the webserver is operational and accessible at the specified URL. If any changes are made to the webserver or its features, please refer to the updated documentation for the most current information.
