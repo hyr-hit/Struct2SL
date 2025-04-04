@@ -10,7 +10,7 @@ To use Struct2SL, you need:
 
 ## 3. Accessing Struct2SL
 Struct2SL is accessible via a web interface. To start using the tool, navigate to the following URL:
-[http://120.76.218.216](http://120.76.218.216).
+[http://struct2sl.bioinformatics-lilab.cn]([http://120.76.218.216](http://struct2sl.bioinformatics-lilab.cn)).
 Upon accessing the URL, you will be directed to the Struct2SL homepage.
 
 ## 4. Navigating the Web Interface
