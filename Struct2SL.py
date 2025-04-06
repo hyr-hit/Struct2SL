@@ -13,7 +13,6 @@ from torch.utils.data import DataLoader, TensorDataset
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 from torch.nn.utils import clip_grad_norm_
 from sklearn.metrics import roc_auc_score, average_precision_score, f1_score, confusion_matrix, accuracy_score, precision_score, recall_score
-from imblearn.over_sampling import SMOTE
 
 # Define the MLP model
 class MLP(nn.Module):
