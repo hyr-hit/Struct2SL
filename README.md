@@ -3,7 +3,7 @@
 Struct2SL is a synthetic lethal gene pair prediction model based on multilayer perceptron, which uses protein information from AlphaFold2 and other sources to enhance the accuracy and versatility of model predictions.
 
 
-![image](https://github.com/hyr-hit/Struct2SL/blob/main/image/frame.jpg)
+![image](https://github.com/hyr-hit/Struct2SL/blob/main/image/frame%20.jpg)
 
 
 # Installation
