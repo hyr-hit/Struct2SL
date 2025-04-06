@@ -15,7 +15,6 @@ You will need the following packages to run the code:
 - numpy==1.26.4
 - pandas==1.3.5
 - scikit-learn==1.4.2
-- imbalanced-learn==0.12.3
 - torchvision==0.19.1
 - scipy==1.10.1
 
