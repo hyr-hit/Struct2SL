@@ -65,7 +65,7 @@ python pre_pre.py
 The protein names are stored in id_list.txt in the order of appearance, and their graph information (indicated by serial numbers) is stored in pre_node2vec_physical.txt
 ```
 cd..
-python ./node2vec-master/src/main.py --input ./PPI/pre_node2vec_physical.txt --output ./PPI/result.emb.txt
+python ./node2vec-master/src/main.py --input ./PPI/pre_node2vec_physical.txt --output ./PPI/result.emb.txt --weighted
 ```
 - Rename the protein and match its characteristics to obtain the final protein PPI feature ppi_emb for later use
 ```
