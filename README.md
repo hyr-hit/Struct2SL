@@ -25,7 +25,7 @@ You will need the following packages to run the code:
 - PPI network: down from https://string-db.org/
 - SL/nonSL: download from https://synlethdb.sist.shanghaitech.edu.cn/v2/#/download
   
-We provide the processed data for training and testing on [figshare](https://figshare.com/articles/dataset/the_processed_data/28263827).
+We provide the processed data for training and testing on [figshare](https://figshare.com/articles/dataset/_b_Strcuct2SL_Fresh_reproduction_b_/33439123).
 
 **Note:** The results reported in the paper were obtained using the filtered human SL dataset, rather than the complete SynLethDB 2.0 human SL collection. The filtering procedure includes:
 (1) removing SL pairs supported only by computational predictions;
