@@ -7,7 +7,7 @@ Struct2SL is a synthetic lethal gene pair prediction model based on multilayer p
 
 
 # Installation
-Struct2SL is based on Pytorch and Python
+Struct2SL is implemented in Python based on PyTorch.
 ## Train the model
 You will need the following packages to run the code:
 - python==3.9.19
@@ -25,18 +25,27 @@ You will need the following packages to run the code:
 - PPI network: down from https://string-db.org/
 - SL/nonSL: download from https://synlethdb.sist.shanghaitech.edu.cn/v2/#/download
   
-We put the processed data for train and test and on [there](https://figshare.com/articles/dataset/the_processed_data/28263827). 
+We provide the processed data for training and testing on [figshare](https://figshare.com/articles/dataset/the_processed_data/28263827).
+
+**Note:** The results reported in the paper were obtained using the filtered human SL dataset, rather than the complete SynLethDB 2.0 human SL collection. The filtering procedure includes:
+(1) removing SL pairs supported only by computational predictions;
+(2) retaining only gene pairs with complete structure, sequence, and PPI features.
+
+After filtering, 23,749 positive SL pairs were used in the experiments.
 
 
 # Usage
 ## Train the model
-Download the processed data mentioned above and put it into the 'data' folder. Run the ``Struct2SL.py`` script directly to train the model
+Download the processed data mentioned above and put it into the `data` folder. 
+The released training script reproduces the reported results only when using the filtered dataset described above.
+
+Run the ``Struct2SL.py`` script directly to train the model:
  ```python
  python Struct2SL.py
  ``` 
 
 ## Processing raw data
-we provide the proccesed data for training and evaluating directly [there](https://figshare.com/articles/dataset/the_processed_data/28263827), and then we will explain how to process the raw data.
+we provide the processed data for training and evaluating directly [there](https://figshare.com/articles/dataset/the_processed_data/28263827), and then we will explain how to process the raw data.
 ### Protein struction data
 - Download protein structure data and convert the three-dimensional atomic structure of proteins into protein contact maps.
 ```
